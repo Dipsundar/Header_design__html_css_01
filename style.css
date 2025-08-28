@@ -148,3 +148,31 @@ nav ul li a:hover {
   border: 2px solid yellow;
   color: yellow;
 }
+
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  background: var(--shadow-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .logo-icon {
+  width: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.social-links {
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.social-links img {
+  height: 15px;
+  display: block;
+  margin: 25px auto;
+  cursor: pointer;
+}
