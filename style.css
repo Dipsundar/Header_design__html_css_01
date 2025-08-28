@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --accent-color: #ff6b3f;
+  --bg-transparent: rgba(255, 255, 255, 0.1);
+  --bg-blur: rgba(255, 255, 255, 0.25);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --primary-font: "Helvetica Neue", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font);
+}
