@@ -162,6 +162,11 @@ nav ul li a:hover {
   width: 20px;
   margin: 30px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar .logo-icon:hover {
+  filter: brightness(10);
+  transform: scale(1.3);
 }
 
 .social-links {
@@ -175,4 +180,10 @@ nav ul li a:hover {
   display: block;
   margin: 25px auto;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.social-links img:hover {
+  filter: brightness(10);
+  transform: scale(1.5);
+  /* filter: invert(1); */
 }
