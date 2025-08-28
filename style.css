@@ -8,8 +8,143 @@
   --primary-font: "Helvetica Neue", sans-serif;
 }
 
+/* resets  */
 * {
   padding: 0;
   margin: 0;
   font-family: var(--primary-font);
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./assets/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 5px 2px;
+  font-size: 14px;
+  transition: all 0.1s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+  border-bottom: 1.5px solid var(--accent-color);
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.profile-icon:hover {
+  border: 2px solid var(--accent-color);
+}
+
+.content {
+  width: 600px;
+  margin-top: 15%;
+  color: var(--primary-color);
+}
+
+.content h1 {
+  font-size: 56px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  margin: 0 10px 0 0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn-bg {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: var(--primary-color);
+  transition: all 0.2s ease-in;
+}
+
+.btn-bg:hover {
+  background-color: green;
+  border: 2px solid green;
+  color: var(--primary-color);
+}
+
+.btn-bg:active {
+  background-color: yellow;
+  border: 2px solid yellow;
+  color: var(--primary-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: green;
+  border: 2px solid green;
+}
+
+.btn-outline:active {
+  background-color: var(--bg-transparent);
+  border: 2px solid yellow;
+  color: yellow;
 }
